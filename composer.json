@@ -1,14 +1,14 @@
 {
-    "name": "userfrosting/sprinkle-account",
+    "name": "ssnukala/ufsprinkle-snutilities",
     "type": "sprinkle",
-    "description": "Authentication and account management module for UserFrosting.",
+    "description": "Utilities commonly used by my sprinkles.",
     "keywords": ["php user management", "usercake", "bootstrap"],
-    "homepage": "https://github.com/userfrosting/UserFrosting",
+    "homepage": "https://github.com/ssnukala/ufsprinkle-snutilities",
     "license" : "MIT",
     "authors" : [
         {
-            "name": "Alexander Weissman",
-            "homepage": "https://alexanderweissman.com"
+            "name": "Srinivas Nukala",
+            "homepage": "http://srinivasnukala.com"
         }
     ],
     "version": "4.0.0",

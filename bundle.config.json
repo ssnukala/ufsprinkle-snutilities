@@ -1,0 +1,16 @@
+{
+    "bundle": {
+        "js/snutil": {
+            "scripts": [
+                "local/js/snutilities_01.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
+        }
+    }
+}

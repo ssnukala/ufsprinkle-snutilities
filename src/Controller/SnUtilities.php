@@ -1,12 +1,10 @@
 <?php
 
 /**
- * Chinmaya Registration Sevak (http://www.chinmayacloud.com)
- *
- * @link      https://github.com/chinmaya.regsevak
+ * UserFrosting (http://www.srinivasnukala.com)
+ * @link      https://github.com/ssnukala/ufsprinkle-sndbforms
  * @copyright Copyright (c) 2013-2016 Srinivas Nukala
- * @license   https://github.com/chinmaya.regsevak/blob/master/licenses/UserFrosting.md (MIT License)
- */
+ **/
 
 namespace UserFrosting\Sprinkle\SnUtilities\Controller;
 
@@ -15,15 +13,6 @@ use UserFrosting\Sprinkle\Core\Controller\SimpleController;
 use UserFrosting\Support\Exception\ForbiddenException;
 use UserFrosting\Sprinkle\Core\Util\EnvironmentInfo;
 
-/**
- * CDFormfieldsController
- *
- * An abstract controller class for connecting to iList2 providers.
- *
- * @package UserFrosting-OpenAuthentication
- * @author Srinivas Nukala
- * @link http://srinivasnukala.com
- */
 class SnUtilities extends SimpleController {
 
     public static function echobr($par_str) {
