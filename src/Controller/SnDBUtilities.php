@@ -14,6 +14,7 @@ use UserFrosting\Support\Exception\ForbiddenException;
 use UserFrosting\Sprinkle\Core\Util\EnvironmentInfo;
 use UserFrosting\Sprinkle\SnUtilities\Model\InfoSchemaColumns;
 use UserFrosting\Sprinkle\SnUtilities\Controller\SnUtilities as SnUtil;
+use UserFrosting\Sprinkle\Core\Facades\Debug as Debug;
 
 /**
  * CDFormfieldsController
@@ -35,6 +36,7 @@ class SnDBUtilities extends SimpleController {
     public static function getMigrationDataArray($table, $where = '') {
         $var_dbdata = InfoSchemaColumns::getTableDataArray($table,$where);
         SnUtil::logarr($var_dbdata, "Line 37");
+        Debug::debug( "Line 37",$var_dbdata);
     }
 
 }
