@@ -2,7 +2,7 @@
 
 /**
  * UserFrosting (http://www.srinivasnukala.com)
- * @link      https://github.com/ssnukala/ufsprinkle-sndbforms
+ * @link      https://github.com/ssnukala/ufsprinkle-snutilities
  * @copyright Copyright (c) 2013-2016 Srinivas Nukala
  **/
 
