@@ -55,5 +55,13 @@ class InfoSchemaColumns extends UFModel
         return $var_dbcols;
     }
 
-    
+      public static function getTableDataArray($table,$where='') {
+        $var_colquery = " SELECT *  FROM $table";
+        if($where!=''){
+            $var_colquery .= " WHERE $where";
+        }
+        $var_dbcols = Capsule::select($var_colquery); 
+        return $var_dbcols;
+    }
+   
 }

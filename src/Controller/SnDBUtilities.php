@@ -32,13 +32,9 @@ class SnDBUtilities extends SimpleController {
         SnUtil::logarr($var_dbcols, "Line 33");
     }
 
-    public static function getTableDataArray($table, $where = '') {
-        $var_colquery = " SELECT *  FROM $table";
-        if ($where != '') {
-            $var_colquery .= " WHERE $where";
-        }
-        $var_dbcols = Capsule::select($var_colquery);
-        return $var_dbcols;
+    public static function getMigrationDataArray($table, $where = '') {
+        $var_dbdata = InfoSchemaColumns::getTableDataArray($table,$where);
+        SnUtil::logarr($var_dbdata, "Line 37");
     }
 
 }
