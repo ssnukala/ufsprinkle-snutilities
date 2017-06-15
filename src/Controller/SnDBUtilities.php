@@ -12,7 +12,7 @@ use Carbon\Carbon;
 use UserFrosting\Sprinkle\Core\Controller\SimpleController;
 use UserFrosting\Support\Exception\ForbiddenException;
 use UserFrosting\Sprinkle\Core\Util\EnvironmentInfo;
-use UserFrosting\Sprinkle\SnUtilities\Model\InfoSchemaColumns;
+use UserFrosting\Sprinkle\SnUtilities\Database\Models\InfoSchemaColumns;
 use UserFrosting\Sprinkle\SnUtilities\Controller\SnUtilities as SnUtil;
 use UserFrosting\Sprinkle\Core\Facades\Debug as Debug;
 
