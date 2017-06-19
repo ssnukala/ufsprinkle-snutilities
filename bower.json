@@ -1,0 +1,31 @@
+{
+    "name": "chinmaya-assets",
+    "version": "0.0.1",
+    "homepage": "https://github.com/ssnukala/ufsprinkle-chinmaya",
+    "authors": [
+        "ssnukala"
+    ],
+    "moduleType": [
+        "node"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "assets/vendor",
+        "examples",
+        "demo-resources",
+        "demo",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+    "domReady": "2.0.1",
+    "geocomplete": "*"
+    },
+    "resolutions": {
+        "jquery": ">= 2.2.4",
+        "bootstrap": "3.x"
+    }
+}

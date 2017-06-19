@@ -7,9 +7,9 @@
  **/
 
 
-namespace UserFrosting\Sprinkle\SnUtilities\Model;
+namespace UserFrosting\Sprinkle\SnUtilities\Database\Models;
 use \Illuminate\Database\Capsule\Manager as Capsule; 
-use UserFrosting\Sprinkle\Core\Model\UFModel;
+use UserFrosting\Sprinkle\Core\Database\Models\Model;
 
 
 /**
@@ -20,7 +20,7 @@ use UserFrosting\Sprinkle\Core\Model\UFModel;
  * @license   https://github.com/userfrosting/UserFrosting/blob/master/licenses/UserFrosting.md (MIT License)
  */
 
-class InfoSchemaColumns extends UFModel
+class InfoSchemaColumns extends Model
  {
 //    protected $table = "adm_formfields";
 
@@ -55,5 +55,13 @@ class InfoSchemaColumns extends UFModel
         return $var_dbcols;
     }
 
-    
+      public static function getTableDataArray($table,$where='') {
+        $var_colquery = " SELECT *  FROM $table";
+        if($where!=''){
+            $var_colquery .= "  $where";
+        }
+        $var_dbcols = Capsule::select($var_colquery); 
+        return $var_dbcols;
+    }
+   
 }

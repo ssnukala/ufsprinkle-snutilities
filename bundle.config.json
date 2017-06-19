@@ -11,6 +11,20 @@
                     }
                 }
             }
+        },
+        "js/google_geocode": {
+            "scripts": [
+                "vendor/geocomplete/jquery.geocomplete.min.js",
+                "local/js/google_geocode_01.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
         }
+        
     }
 }

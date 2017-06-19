@@ -35,6 +35,10 @@ class SnUtilities extends SimpleController {
                 print_r($par_arr, true) . " \n\n </pre>");
     }
 
+    public static function logtxt($par_comment = 'none') {
+        error_log("$par_comment \n<br>");
+    }
+
     public static function roundPrice($par_price, $par_precision = 1) {
         if (is_numeric($par_price))
             $var_price = round($par_price / 1000, 1) * 1000;
@@ -142,7 +146,7 @@ class SnUtilities extends SimpleController {
         /** @var UserFrosting\Sprinkle\Account\Authorize\AuthorizationManager */
         $authorizer = $this->ci->authorizer;
 
-        /** @var UserFrosting\Sprinkle\Account\Model\User $currentUser */
+        /** @var UserFrosting\Sprinkle\Account\Database\Models\User $currentUser */
         $currentUser = $this->ci->currentUser;
 
         // Access-controlled page
